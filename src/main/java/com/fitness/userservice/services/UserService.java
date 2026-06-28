@@ -51,4 +51,7 @@ public class UserService {
         return response;
     }
 
+    public Boolean existByUserId(String userId) {
+        return repo.existsById(userId);
+    }
 }
